@@ -103,10 +103,16 @@ void PointList::Push(const XnPoint3D& position)
 	}
 	
 	lastPoint = position;
+	isHandClose[lengthOfList] = position.Z < HAND_CLOSE;
 	lengthOfList++;
 }
 
 const XnPoint3D& PointList::GetLastPoint() const
 {
 	return lastPoint;
+}
+
+const bool* PointList::GetHandCloseVector() const
+{
+	return isHandClose;
 }

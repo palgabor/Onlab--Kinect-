@@ -1,7 +1,8 @@
 bin/intermediate/PointList.d bin/intermediate/PointList.o: \
- source/PointList.cpp source/PointList.h /usr/include/ni/XnCppWrapper.h \
- /usr/include/ni/XnOpenNI.h /usr/include/ni/XnTypes.h \
- /usr/include/ni/XnStatus.h /usr/include/ni/XnPlatform.h \
+ source/PointList.cpp source/PointList.h source/Constants.h \
+ /usr/include/ni/XnCppWrapper.h /usr/include/ni/XnOpenNI.h \
+ /usr/include/ni/XnTypes.h /usr/include/ni/XnStatus.h \
+ /usr/include/ni/XnPlatform.h \
  /usr/include/ni/Linux-x86/XnPlatformLinux-x86.h /usr/include/unistd.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/bits/predefs.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -67,6 +68,8 @@ bin/intermediate/PointList.d bin/intermediate/PointList.o: \
  /usr/include/c++/4.6/cassert
 
 source/PointList.h:
+
+source/Constants.h:
 
 /usr/include/ni/XnCppWrapper.h:
 

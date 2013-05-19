@@ -55,7 +55,7 @@ XnStatus HandViewer::InitOpenGL( int argc, char **argv )
 
 	return rc;
 }
-
+#include <iostream>
 void HandViewer::DisplayPostDraw()
 {
 	const PointListHandler& handler = handTracker.GetPointListHandler();
@@ -68,6 +68,7 @@ void HandViewer::DisplayPostDraw()
 		const PointList &pointList = it.GetPointList();
 		
 		XnPoint3D point;
+		const bool *isHandClose = pointList.GetHandCloseVector();
 		
 		for(PointList::ConstIterator it2 = pointList.begin(); it2 != pointList.end(); ++it2)
 		{

@@ -60,12 +60,13 @@ bin/intermediate/HandTracker.d bin/intermediate/HandTracker.o: \
  /usr/include/ni/XnPrdNodeInfo.h /usr/include/ni/XnQueries.h \
  /usr/include/ni/XnPrdNode.h /usr/include/ni/XnEnumerationErrors.h \
  /usr/include/ni/XnVersion.h /usr/include/ni/XnCodecIDs.h \
- source/PointListHandler.h source/PointList.h /usr/include/ni/XnList.h \
- /usr/include/ni/XnDataTypes.h /usr/include/ni/XnOS.h \
- /usr/include/ni/IXnNodeAllocator.h /usr/include/ni/XnNodeAllocator.h \
- /usr/include/ni/XnNode.h /usr/include/ni/XnBaseNode.h \
- /usr/include/ni/XnStatusCodes.h /usr/include/ni/XnHash.h \
- /usr/include/ni/XnList.h /usr/include/c++/4.6/cassert source/Constants.h
+ source/PointListHandler.h source/PointList.h source/Constants.h \
+ /usr/include/ni/XnList.h /usr/include/ni/XnDataTypes.h \
+ /usr/include/ni/XnOS.h /usr/include/ni/IXnNodeAllocator.h \
+ /usr/include/ni/XnNodeAllocator.h /usr/include/ni/XnNode.h \
+ /usr/include/ni/XnBaseNode.h /usr/include/ni/XnStatusCodes.h \
+ /usr/include/ni/XnHash.h /usr/include/ni/XnList.h \
+ /usr/include/c++/4.6/cassert
 
 source/HandTracker.h:
 
@@ -253,6 +254,8 @@ source/PointListHandler.h:
 
 source/PointList.h:
 
+source/Constants.h:
+
 /usr/include/ni/XnList.h:
 
 /usr/include/ni/XnDataTypes.h:
@@ -274,5 +277,3 @@ source/PointList.h:
 /usr/include/ni/XnList.h:
 
 /usr/include/c++/4.6/cassert:
-
-source/Constants.h:
