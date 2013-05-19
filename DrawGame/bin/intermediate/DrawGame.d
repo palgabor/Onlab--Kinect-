@@ -114,6 +114,7 @@ bin/intermediate/DrawGame.d bin/intermediate/DrawGame.o: \
  /usr/include/ni/XnPrdNodeInfo.h /usr/include/ni/XnQueries.h \
  /usr/include/ni/XnPrdNode.h /usr/include/ni/XnEnumerationErrors.h \
  /usr/include/ni/XnVersion.h /usr/include/ni/XnCodecIDs.h \
+ /usr/include/c++/4.6/sstream /usr/include/c++/4.6/bits/sstream.tcc \
  source/Constants.h source/PointListHandler.h source/PointList.h \
  /usr/include/ni/XnList.h /usr/include/ni/XnDataTypes.h \
  /usr/include/ni/XnOS.h /usr/include/ni/IXnNodeAllocator.h \
@@ -441,6 +442,10 @@ source/Viewer.h:
 /usr/include/ni/XnVersion.h:
 
 /usr/include/ni/XnCodecIDs.h:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
 
 source/Constants.h:
 

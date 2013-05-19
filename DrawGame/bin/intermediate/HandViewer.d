@@ -65,19 +65,12 @@ bin/intermediate/HandViewer.d bin/intermediate/HandViewer.o: \
  /usr/include/ni/XnPrdNodeInfo.h /usr/include/ni/XnQueries.h \
  /usr/include/ni/XnPrdNode.h /usr/include/ni/XnEnumerationErrors.h \
  /usr/include/ni/XnVersion.h /usr/include/ni/XnCodecIDs.h \
- source/Constants.h source/PointListHandler.h source/PointList.h \
- /usr/include/ni/XnList.h /usr/include/ni/XnDataTypes.h \
- /usr/include/ni/XnOS.h /usr/include/ni/IXnNodeAllocator.h \
- /usr/include/ni/XnNodeAllocator.h /usr/include/ni/XnNode.h \
- /usr/include/ni/XnBaseNode.h /usr/include/ni/XnStatusCodes.h \
- /usr/include/ni/XnHash.h /usr/include/ni/XnList.h \
- /usr/include/c++/4.6/cassert source/HandTracker.h \
- /usr/include/c++/4.6/iostream \
+ /usr/include/c++/4.6/sstream /usr/include/c++/4.6/istream \
+ /usr/include/c++/4.6/ios /usr/include/c++/4.6/iosfwd \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h \
- /usr/include/c++/4.6/ostream /usr/include/c++/4.6/ios \
- /usr/include/c++/4.6/iosfwd /usr/include/c++/4.6/bits/stringfwd.h \
+ /usr/include/c++/4.6/bits/stringfwd.h \
  /usr/include/c++/4.6/bits/postypes.h /usr/include/c++/4.6/cwchar \
  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
@@ -122,9 +115,17 @@ bin/intermediate/HandViewer.d bin/intermediate/HandViewer.o: \
  /usr/include/c++/4.6/bits/streambuf_iterator.h \
  /usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_inline.h \
  /usr/include/c++/4.6/bits/locale_facets.tcc \
- /usr/include/c++/4.6/bits/basic_ios.tcc \
- /usr/include/c++/4.6/bits/ostream.tcc /usr/include/c++/4.6/istream \
- /usr/include/c++/4.6/bits/istream.tcc
+ /usr/include/c++/4.6/bits/basic_ios.tcc /usr/include/c++/4.6/ostream \
+ /usr/include/c++/4.6/bits/ostream.tcc \
+ /usr/include/c++/4.6/bits/istream.tcc \
+ /usr/include/c++/4.6/bits/sstream.tcc source/Constants.h \
+ source/PointListHandler.h source/PointList.h /usr/include/ni/XnList.h \
+ /usr/include/ni/XnDataTypes.h /usr/include/ni/XnOS.h \
+ /usr/include/ni/IXnNodeAllocator.h /usr/include/ni/XnNodeAllocator.h \
+ /usr/include/ni/XnNode.h /usr/include/ni/XnBaseNode.h \
+ /usr/include/ni/XnStatusCodes.h /usr/include/ni/XnHash.h \
+ /usr/include/ni/XnList.h /usr/include/c++/4.6/cassert \
+ source/HandTracker.h
 
 /usr/include/GL/glut.h:
 
@@ -328,49 +329,19 @@ source/Viewer.h:
 
 /usr/include/ni/XnCodecIDs.h:
 
-source/Constants.h:
+/usr/include/c++/4.6/sstream:
 
-source/PointListHandler.h:
+/usr/include/c++/4.6/istream:
 
-source/PointList.h:
+/usr/include/c++/4.6/ios:
 
-/usr/include/ni/XnList.h:
-
-/usr/include/ni/XnDataTypes.h:
-
-/usr/include/ni/XnOS.h:
-
-/usr/include/ni/IXnNodeAllocator.h:
-
-/usr/include/ni/XnNodeAllocator.h:
-
-/usr/include/ni/XnNode.h:
-
-/usr/include/ni/XnBaseNode.h:
-
-/usr/include/ni/XnStatusCodes.h:
-
-/usr/include/ni/XnHash.h:
-
-/usr/include/ni/XnList.h:
-
-/usr/include/c++/4.6/cassert:
-
-source/HandTracker.h:
-
-/usr/include/c++/4.6/iostream:
+/usr/include/c++/4.6/iosfwd:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++config.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/os_defines.h:
 
 /usr/include/c++/4.6/x86_64-linux-gnu/./bits/cpu_defines.h:
-
-/usr/include/c++/4.6/ostream:
-
-/usr/include/c++/4.6/ios:
-
-/usr/include/c++/4.6/iosfwd:
 
 /usr/include/c++/4.6/bits/stringfwd.h:
 
@@ -486,8 +457,40 @@ source/HandTracker.h:
 
 /usr/include/c++/4.6/bits/basic_ios.tcc:
 
+/usr/include/c++/4.6/ostream:
+
 /usr/include/c++/4.6/bits/ostream.tcc:
 
-/usr/include/c++/4.6/istream:
-
 /usr/include/c++/4.6/bits/istream.tcc:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
+
+source/Constants.h:
+
+source/PointListHandler.h:
+
+source/PointList.h:
+
+/usr/include/ni/XnList.h:
+
+/usr/include/ni/XnDataTypes.h:
+
+/usr/include/ni/XnOS.h:
+
+/usr/include/ni/IXnNodeAllocator.h:
+
+/usr/include/ni/XnNodeAllocator.h:
+
+/usr/include/ni/XnNode.h:
+
+/usr/include/ni/XnBaseNode.h:
+
+/usr/include/ni/XnStatusCodes.h:
+
+/usr/include/ni/XnHash.h:
+
+/usr/include/ni/XnList.h:
+
+/usr/include/c++/4.6/cassert:
+
+source/HandTracker.h:

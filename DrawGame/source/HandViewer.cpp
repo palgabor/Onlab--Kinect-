@@ -55,7 +55,7 @@ XnStatus HandViewer::InitOpenGL( int argc, char **argv )
 
 	return rc;
 }
-#include <iostream>
+
 void HandViewer::DisplayPostDraw()
 {
 	const PointListHandler& handler = handTracker.GetPointListHandler();
@@ -86,10 +86,9 @@ void HandViewer::DisplayPostDraw()
 		assert(numpoints <= Constants::SIZE_OF_POINT_LIST);
 
 		//Draw all points
-		//XnUInt32 nColor = it.GetKey() % LENGTHOF(COLOURS);
-		//glColor4f(COLOURS[nColor][0], COLOURS[nColor][1], COLOURS[nColor][2], 1.0f);
+		XnUInt32 nColor = it.GetKey() % LENGTHOF(COLOURS);
+		glColor4f(COLOURS[nColor][0], COLOURS[nColor][1], COLOURS[nColor][2], 1.0f);
 		glPointSize(3);
-		glColor4f(currentDisplayColour[0], currentDisplayColour[1], currentDisplayColour[2], 1.0f);
 		glVertexPointer(3, GL_FLOAT, 0, coordinates);
 		glDrawArrays(GL_LINE_STRIP, 0, numpoints);
 		
@@ -150,4 +149,46 @@ void HandViewer::DisplayGameStatus()
 	coordinates[2] = 0;
 	glVertexPointer(3,GL_FLOAT,0,coordinates);
 	glDrawArrays(GL_POINTS,0,1);
+}
+
+void HandViewer::DisplayDistanceFromSensor()
+{
+	std::stringstream ss;
+	unsigned counter = 1;
+
+	const PointListHandler& handler = handTracker.GetPointListHandler();
+
+	for(PointListHandler::ConstIterator it = handler.begin(); it != handler.end(); ++it)
+	{
+		const PointList &pointList = it.GetPointList();
+		XnPoint3D lastPoint = pointList.GetLastPoint();
+		
+		std::string str = "Hand ";
+		ss << counter;
+		str = str + ss.str();
+		ss.str("");
+		
+		ss << " distance from the sensor: ";
+		str = str + ss.str();
+		ss.str("");
+		
+		if(lastPoint.Z < HAND_CLOSE)
+			ss << 0;
+		else
+			ss << lastPoint.Z - HAND_CLOSE;	
+		str = str + ss.str();
+		ss.str("");
+	
+		XnUInt32 nColor = it.GetKey() % LENGTHOF(COLOURS);
+		glColor4f(COLOURS[nColor][0], COLOURS[nColor][1], COLOURS[nColor][2], 1.0f);
+		glRasterPos2f(40, counter*30);
+		for(int i=0;i<str.length();i++)
+		{
+			glutBitmapCharacter(GLUT_BITMAP_TIMES_ROMAN_24,str[i]);
+		}
+		
+		counter++;
+	}
+	
+
 }

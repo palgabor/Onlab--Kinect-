@@ -47,9 +47,7 @@ void Viewer::glutKeyboard (unsigned char key, int x, int y)
 //---------------------------------------------------------------------------
 Viewer::Viewer(xn::Context& p_context):texMap(NULL),texMapX(0),texMapY(0),displayState(DEFAULT_DISPLAY_MODE),context(p_context)
 {
-	currentDisplayColour[0] = COLOURS[GREEN][0];
-	currentDisplayColour[1] = COLOURS[GREEN][1];
-	currentDisplayColour[2] = COLOURS[GREEN][2];
+
 }
 
 Viewer::~Viewer()
@@ -297,6 +295,9 @@ void Viewer::Display()
 	// Displays game status (enabled or not)
 	DisplayGameStatus();
 	
+	// Displays game status (enabled or not)
+	DisplayDistanceFromSensor();
+	
 	// Swap the OpenGL display buffers
 	glutSwapBuffers();
 }
@@ -321,22 +322,6 @@ void Viewer::OnKey(unsigned char key, int x, int y)
 		break;
 	case 'm':
 		context.SetGlobalMirror(!context.GetGlobalMirror());
-		break;
-	
-	case 'r':
-		currentDisplayColour[0] = COLOURS[RED][0];
-		currentDisplayColour[1] = COLOURS[RED][1];
-		currentDisplayColour[2] = COLOURS[RED][2];
-		break;
-	case 'g':
-		currentDisplayColour[0] = COLOURS[GREEN][0];
-		currentDisplayColour[1] = COLOURS[GREEN][1];
-		currentDisplayColour[2] = COLOURS[GREEN][2];
-		break;
-	case 'b':
-		currentDisplayColour[0] = COLOURS[BLUE][0];
-		currentDisplayColour[1] = COLOURS[BLUE][1];
-		currentDisplayColour[2] = COLOURS[BLUE][2];
 		break;
 	}
 }

@@ -1,6 +1,7 @@
 #pragma once
 
 #include <XnCppWrapper.h>
+#include <sstream>
 
 #include "Constants.h"
 #include "PointListHandler.h"
@@ -28,6 +29,7 @@ class Viewer
 		virtual void Display();
 		virtual void DisplayPostDraw(){};	// Overload to draw over the screen image
 		virtual void DisplayGameStatus(){};	// Overload to draw over the screen image
+		virtual void DisplayDistanceFromSensor(){};	// Overload to draw over the screen image
 
 		virtual void OnKey(unsigned char key, int x, int y);
 
@@ -41,8 +43,6 @@ class Viewer
 		xn::ImageGenerator	imageGenerator;
 
 		static Viewer*		instance;
-		
-		float currentDisplayColour[3];
 
 		void ScalePoint(XnPoint3D& point);
 	

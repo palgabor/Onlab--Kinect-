@@ -78,7 +78,55 @@ bin/intermediate/Viewer.d bin/intermediate/Viewer.o: source/Viewer.cpp \
  /usr/include/ni/XnModuleInterface.h /usr/include/ni/XnPrdNodeInfo.h \
  /usr/include/ni/XnQueries.h /usr/include/ni/XnPrdNode.h \
  /usr/include/ni/XnEnumerationErrors.h /usr/include/ni/XnVersion.h \
- /usr/include/ni/XnCodecIDs.h source/Constants.h \
+ /usr/include/ni/XnCodecIDs.h /usr/include/c++/4.6/sstream \
+ /usr/include/c++/4.6/istream /usr/include/c++/4.6/ios \
+ /usr/include/c++/4.6/iosfwd /usr/include/c++/4.6/bits/stringfwd.h \
+ /usr/include/c++/4.6/bits/postypes.h /usr/include/c++/4.6/cwchar \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/4.6/exception /usr/include/c++/4.6/bits/char_traits.h \
+ /usr/include/c++/4.6/bits/stl_algobase.h \
+ /usr/include/c++/4.6/bits/functexcept.h \
+ /usr/include/c++/4.6/bits/exception_defines.h \
+ /usr/include/c++/4.6/ext/numeric_traits.h \
+ /usr/include/c++/4.6/bits/stl_pair.h /usr/include/c++/4.6/bits/move.h \
+ /usr/include/c++/4.6/bits/concept_check.h \
+ /usr/include/c++/4.6/bits/stl_iterator_base_types.h \
+ /usr/include/c++/4.6/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/4.6/bits/stl_iterator.h \
+ /usr/include/c++/4.6/debug/debug.h /usr/include/c++/4.6/bits/localefwd.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h \
+ /usr/include/c++/4.6/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/4.6/cctype \
+ /usr/include/ctype.h /usr/include/c++/4.6/bits/ios_base.h \
+ /usr/include/c++/4.6/ext/atomicity.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h \
+ /usr/include/c++/4.6/bits/locale_classes.h /usr/include/c++/4.6/string \
+ /usr/include/c++/4.6/bits/allocator.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h \
+ /usr/include/c++/4.6/ext/new_allocator.h /usr/include/c++/4.6/new \
+ /usr/include/c++/4.6/bits/ostream_insert.h \
+ /usr/include/c++/4.6/bits/cxxabi_forced.h \
+ /usr/include/c++/4.6/bits/stl_function.h \
+ /usr/include/c++/4.6/backward/binders.h \
+ /usr/include/c++/4.6/bits/range_access.h \
+ /usr/include/c++/4.6/bits/basic_string.h \
+ /usr/include/c++/4.6/initializer_list \
+ /usr/include/c++/4.6/bits/basic_string.tcc \
+ /usr/include/c++/4.6/bits/locale_classes.tcc \
+ /usr/include/c++/4.6/streambuf /usr/include/c++/4.6/bits/streambuf.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.h \
+ /usr/include/c++/4.6/bits/locale_facets.h /usr/include/c++/4.6/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_base.h \
+ /usr/include/c++/4.6/bits/streambuf_iterator.h \
+ /usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_inline.h \
+ /usr/include/c++/4.6/bits/locale_facets.tcc \
+ /usr/include/c++/4.6/bits/basic_ios.tcc /usr/include/c++/4.6/ostream \
+ /usr/include/c++/4.6/bits/ostream.tcc \
+ /usr/include/c++/4.6/bits/istream.tcc \
+ /usr/include/c++/4.6/bits/sstream.tcc source/Constants.h \
  source/PointListHandler.h source/PointList.h /usr/include/ni/XnList.h \
  /usr/include/ni/XnDataTypes.h /usr/include/ni/XnOS.h \
  /usr/include/ni/IXnNodeAllocator.h /usr/include/ni/XnNodeAllocator.h \
@@ -317,6 +365,132 @@ source/Viewer.h:
 /usr/include/ni/XnVersion.h:
 
 /usr/include/ni/XnCodecIDs.h:
+
+/usr/include/c++/4.6/sstream:
+
+/usr/include/c++/4.6/istream:
+
+/usr/include/c++/4.6/ios:
+
+/usr/include/c++/4.6/iosfwd:
+
+/usr/include/c++/4.6/bits/stringfwd.h:
+
+/usr/include/c++/4.6/bits/postypes.h:
+
+/usr/include/c++/4.6/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/c++/4.6/exception:
+
+/usr/include/c++/4.6/bits/char_traits.h:
+
+/usr/include/c++/4.6/bits/stl_algobase.h:
+
+/usr/include/c++/4.6/bits/functexcept.h:
+
+/usr/include/c++/4.6/bits/exception_defines.h:
+
+/usr/include/c++/4.6/ext/numeric_traits.h:
+
+/usr/include/c++/4.6/bits/stl_pair.h:
+
+/usr/include/c++/4.6/bits/move.h:
+
+/usr/include/c++/4.6/bits/concept_check.h:
+
+/usr/include/c++/4.6/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/4.6/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/4.6/bits/stl_iterator.h:
+
+/usr/include/c++/4.6/debug/debug.h:
+
+/usr/include/c++/4.6/bits/localefwd.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++locale.h:
+
+/usr/include/c++/4.6/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/4.6/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/4.6/bits/ios_base.h:
+
+/usr/include/c++/4.6/ext/atomicity.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/gthr-default.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/atomic_word.h:
+
+/usr/include/c++/4.6/bits/locale_classes.h:
+
+/usr/include/c++/4.6/string:
+
+/usr/include/c++/4.6/bits/allocator.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/c++allocator.h:
+
+/usr/include/c++/4.6/ext/new_allocator.h:
+
+/usr/include/c++/4.6/new:
+
+/usr/include/c++/4.6/bits/ostream_insert.h:
+
+/usr/include/c++/4.6/bits/cxxabi_forced.h:
+
+/usr/include/c++/4.6/bits/stl_function.h:
+
+/usr/include/c++/4.6/backward/binders.h:
+
+/usr/include/c++/4.6/bits/range_access.h:
+
+/usr/include/c++/4.6/bits/basic_string.h:
+
+/usr/include/c++/4.6/initializer_list:
+
+/usr/include/c++/4.6/bits/basic_string.tcc:
+
+/usr/include/c++/4.6/bits/locale_classes.tcc:
+
+/usr/include/c++/4.6/streambuf:
+
+/usr/include/c++/4.6/bits/streambuf.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.h:
+
+/usr/include/c++/4.6/bits/locale_facets.h:
+
+/usr/include/c++/4.6/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_base.h:
+
+/usr/include/c++/4.6/bits/streambuf_iterator.h:
+
+/usr/include/c++/4.6/x86_64-linux-gnu/./bits/ctype_inline.h:
+
+/usr/include/c++/4.6/bits/locale_facets.tcc:
+
+/usr/include/c++/4.6/bits/basic_ios.tcc:
+
+/usr/include/c++/4.6/ostream:
+
+/usr/include/c++/4.6/bits/ostream.tcc:
+
+/usr/include/c++/4.6/bits/istream.tcc:
+
+/usr/include/c++/4.6/bits/sstream.tcc:
 
 source/Constants.h:
 

@@ -13,6 +13,7 @@ class HandViewer: public Viewer
 
 		virtual void DisplayPostDraw();
 		virtual void DisplayGameStatus();
+		virtual void DisplayDistanceFromSensor();
 		
 		virtual XnStatus InitOpenGL(int argc, char **argv);
 
