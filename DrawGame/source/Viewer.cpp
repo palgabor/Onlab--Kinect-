@@ -323,6 +323,12 @@ void Viewer::OnKey(unsigned char key, int x, int y)
 	case 'm':
 		context.SetGlobalMirror(!context.GetGlobalMirror());
 		break;
+	case 'q':
+		device.Move(device.getCurrentPosition()+1);
+		break;
+	case 'a':
+		device.Move(device.getCurrentPosition()-1);
+		break;
 	}
 }
 

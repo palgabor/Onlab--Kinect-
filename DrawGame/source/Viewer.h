@@ -5,6 +5,7 @@
 
 #include "Constants.h"
 #include "PointListHandler.h"
+#include "Device.h"
 
 class Viewer
 {
@@ -21,6 +22,8 @@ class Viewer
 		DisplayModes_e	displayState;
 		xn::DepthMetaData	depthMD;
 		xn::ImageMetaData	imageMD;
+		
+		Device device;
 		
 	protected:
 		Viewer(xn::Context& p_context);

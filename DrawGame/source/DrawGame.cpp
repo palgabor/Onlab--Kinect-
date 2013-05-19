@@ -12,7 +12,6 @@
 xn::Context		context;
 xn::ScriptNode	scriptNode;
 
-
 int main(int argc, char** argv)
 {
 	XnStatus returnCode;
@@ -40,7 +39,6 @@ int main(int argc, char** argv)
 		std::cout<<std::endl<<"Viewer init failed: "<<xnGetStatusString(returnCode)<<std::endl;
 		return returnCode;
 	}
-
 
 	returnCode = viewer.Run();
 	if (returnCode != XN_STATUS_OK)

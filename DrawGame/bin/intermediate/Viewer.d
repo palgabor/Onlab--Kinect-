@@ -132,7 +132,8 @@ bin/intermediate/Viewer.d bin/intermediate/Viewer.o: source/Viewer.cpp \
  /usr/include/ni/IXnNodeAllocator.h /usr/include/ni/XnNodeAllocator.h \
  /usr/include/ni/XnNode.h /usr/include/ni/XnBaseNode.h \
  /usr/include/ni/XnStatusCodes.h /usr/include/ni/XnHash.h \
- /usr/include/ni/XnList.h
+ /usr/include/ni/XnList.h source/Device.h /usr/include/ni/XnUSB.h \
+ /usr/include/c++/4.6/cstdio
 
 /usr/include/ni/XnOS.h:
 
@@ -517,3 +518,9 @@ source/PointList.h:
 /usr/include/ni/XnHash.h:
 
 /usr/include/ni/XnList.h:
+
+source/Device.h:
+
+/usr/include/ni/XnUSB.h:
+
+/usr/include/c++/4.6/cstdio:
