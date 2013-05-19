@@ -61,16 +61,13 @@ void HandViewer::DisplayPostDraw()
 	const PointListHandler& handler = handTracker.GetPointListHandler();
 
 	XnFloat	coordinates[3 * SIZE_OF_POINT_LIST];
-	XnFloat farCoordinates[3 * SIZE_OF_POINT_LIST];
 	
 	for(PointListHandler::ConstIterator it = handler.begin(); it != handler.end(); ++it)
 	{
 		int	numpoints = 0;
-		int numOfFarPoints = 0;
 		const PointList &pointList = it.GetPointList();
 		
 		XnPoint3D point;
-		const bool *isHandClose = pointList.GetHandCloseVector();
 			
 		for(PointList::ConstIterator it2 = pointList.begin(); it2 != pointList.end(); ++it2)
 		{
@@ -79,15 +76,10 @@ void HandViewer::DisplayPostDraw()
 			ScalePoint(point);
 			coordinates[numpoints * 3] = point.X;
 			coordinates[numpoints * 3 + 1] = point.Y;
-			coordinates[numpoints * 3 + 2] = 0;
-			
-			if(point.Z > HAND_CLOSE)
-			{
-				farCoordinates[numOfFarPoints * 3] = point.X;
-				farCoordinates[numOfFarPoints * 3 + 1] = point.Y;
-				farCoordinates[numOfFarPoints * 3 + 2] = 0;
-				++numOfFarPoints;
-			}
+			if(point.Z < HAND_CLOSE)
+				coordinates[numpoints * 3 + 2] = 0;
+			else
+				coordinates[numpoints * 3 + 2] = point.Z;
 
 			++numpoints;
 		}
@@ -102,19 +94,9 @@ void HandViewer::DisplayPostDraw()
 		glDrawArrays(GL_LINE_STRIP, 0, numpoints);
 		
 		//Draw current point as a larger dot
-		XnPoint3D lastPoint = pointList.GetLastPoint();
-		if(lastPoint.Z < HAND_CLOSE)
-			glColor4f(currentDisplayColour[0], currentDisplayColour[1], currentDisplayColour[2], 1.0f);
-		else
-			glColor4f(COLOURS[ORANGE][0], COLOURS[ORANGE][1], COLOURS[ORANGE][2], 1.0f);
 		glPointSize(10);
 		glDrawArrays(GL_POINTS, 0, 1);
-				
-		//Draw far points
-		glColor4f(COLOURS[ORANGE][0], COLOURS[ORANGE][1], COLOURS[ORANGE][2], 1.0f);
-		glVertexPointer(3, GL_FLOAT, 0, farCoordinates);
-		glDrawArrays(GL_LINE_STRIP, 0, numOfFarPoints);		
-				
+
 		glFlush();
 	}
 }

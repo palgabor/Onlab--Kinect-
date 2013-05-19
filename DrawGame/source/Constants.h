@@ -22,7 +22,7 @@ static const int TEXTURE_SIZE = 512;
 
 
 //HandTracker, HandViewer
-static const int SIZE_OF_POINT_LIST = 1000;
+static const int SIZE_OF_POINT_LIST = 10000;
 
 
 //HandViewer
