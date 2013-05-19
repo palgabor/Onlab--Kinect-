@@ -113,10 +113,12 @@ void HandViewer::DisplayGameStatus()
 	if(numOfUsers > 0)
 	{
 		glColor3f(COLOURS[GREEN][0], COLOURS[GREEN][1], COLOURS[GREEN][2]);
+		device.SetLedColour(LED_GREEN);
 	}
 	else
 	{
 		glColor3f(COLOURS[RED][0], COLOURS[RED][1], COLOURS[RED][2]);
+		device.SetLedColour(LED_RED);
 	}
 	
 	XnFloat coordinates[3];
@@ -173,9 +175,15 @@ void HandViewer::DisplayDistanceFromSensor()
 		ss.str("");
 		
 		if(lastPoint.Z < HAND_CLOSE)
+		{
 			ss << 0;
+			device.SetLedColour(LED_GREEN);
+		}
 		else
-			ss << lastPoint.Z - HAND_CLOSE;	
+		{
+			ss << lastPoint.Z - HAND_CLOSE;
+			device.SetLedColour(LED_ORANGE);	
+		}
 		str = str + ss.str();
 		ss.str("");
 	

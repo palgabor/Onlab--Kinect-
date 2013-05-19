@@ -23,8 +23,6 @@ class Viewer
 		xn::DepthMetaData	depthMD;
 		xn::ImageMetaData	imageMD;
 		
-		Device device;
-		
 	protected:
 		Viewer(xn::Context& p_context);
 		virtual ~Viewer();
@@ -48,6 +46,8 @@ class Viewer
 		static Viewer*		instance;
 
 		void ScalePoint(XnPoint3D& point);
+		
+		Device device;
 	
 	public:
 		// Singleton

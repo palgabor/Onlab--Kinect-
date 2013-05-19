@@ -50,3 +50,14 @@ static const unsigned YELLOW = 5;
 static const unsigned ORANGE = 6;
 static const unsigned PINK = 7;
 
+//Device
+enum LED_STATUS {
+	LED_OFF = 0,
+	LED_GREEN,
+	LED_RED,
+	LED_ORANGE,
+	LED_BLINK_ORANGE,
+	LED_BLINK_GREEN,
+	LED_BLINK_RED_ORANGE
+};
+
