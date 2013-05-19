@@ -1,4 +1,0 @@
-Onlab--Kinect-
-==============
-
-Onlab (Kinect)
